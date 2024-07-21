@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/slider.css" />
+    <link rel="stylesheet" href="assets/responsiveStyles.css" />
+    <link rel="stylesheet" href="assets/mobileMenu.css" />
+    <title>Alpha Momin</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="assets/sprite.svg#icon-logo"></use>
+            </svg>
+        </div>
+
+        <!-- Desktop Navbar -->
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__menu--item">
+                    <a href="#about">
+                        <span>About</span>
+                    </a>
+                </li>
+                <!-- &#10304; -->
+                <li class="nav__menu--item">
+                    <a href="#services">
+                        <span>Services</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <a href="#contact" class="btn-link">Contact</a>
+
+        <!-- Mobile Nav Button -->
+        <div class="mobile-menu" id="mobile-menu">
+            <svg class="mobile-menu__svg">
+                <use xlink:href="assets/sprite.svg#icon-bars"></use>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="slider">
+                <button id="prev-slide">&larr;</button>
+                <span id="slide">
+                    <div class="slide-content">
+                        <h2>Travel & Accommodation</h2>
+                        <p>We help you get the best deals while providing assistance for TSA Pre-check, Global Entry, Flight Bookings, Hotel Accommodations, Airbnb Bookings, Canada Visit Visa Applications</p>
+                    </div>
+                    <a class="slide" href="">
+                        <img src="/assets/images/travel-and-accommodation.jpg" alt="Travel and Accommodation"/>
+                    </a>
+                </span>
+                <button id="next-slide">&rarr;</button>
+            </div>
+            <!-- <div class="hero-greetings">
+                <h1>Welcome!</h1>
+                <p>Our services at Alpha Momin, are tailored to empower you!</p>
+            </div> -->
+        </section>
+        <!-- <section class="services">
+            <h2>Our Services</h2>
+            <p>Our services are tailored to empower you!</p>
+            <div>
+
+            </div>
+        </section> -->
+    </main>
+
+    <footer>
+        <small>&copy; 2024 Alpha Momin | All Rights Reserved</small>
+    </footer>
+    <!-- Mobile Navbar -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav__close" id="mobile-nav__close">
+            <svg class="mobile-nav__close--svg">
+                <use xlink:href="assets/sprite.svg#icon-close"></use>
+            </svg>
+        </div>
+        <ul class="mobile-nav__menu">
+            <li class="mobile-nav__menu--item">
+                <a class="item" href="#about">
+                    <svg>
+                        <use xlink:href="assets/sprite.svg#icon-drivers-license"></use>
+                    </svg>
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li class="mobile-nav__menu--item">
+                <a class="item" href="#work">
+                    <svg>
+                        <use xlink:href="assets/sprite.svg#icon-server"></use>
+                    </svg>
+                    <span>Work</span>
+                </a>
+            </li>
+            <li class="mobile-nav__menu--item">
+                <a class="item" href="#skills">
+                    <svg>
+                        <use xlink:href="assets/sprite.svg#icon-tasks"></use>
+                    </svg>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li class="mobile-nav__menu--item">
+                <a class="item" href="#contact">
+                    <svg>
+                        <use xlink:href="assets/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="assets/navigation.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
