@@ -31,7 +31,7 @@ const slides = [
         id: "3",
         title: "Property & Registration",
         description:
-            "We provide assistance in Traffic Ticket Transfers, Car Financing, Banking, Credit Score Management, Pay Traffic Violation and more",
+            "Your go-to for Rental Properties across Chicago and closer surburbs, LLC and Corporation registration, and Special & Custom License Plates",
         image: "assets/images/property-registration.jpg",
         link: "",
     },
