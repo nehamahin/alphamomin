@@ -35,6 +35,14 @@ const slides = [
         image: "assets/images/property-registration.jpg",
         link: "",
     },
+    {
+        id: "4",
+        title: "Web Designing & Maintenance",
+        description:
+            "We design, maintain and develop experiences to make people's life simpler.",
+        image: "assets/images/webdesigning-maintenance.jpg",
+        link: "",
+    },
 ];
 
 let currentSlide = 0;
