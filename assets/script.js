@@ -8,7 +8,7 @@ const slides = [
         title: "Travel & Accommodation",
         description:
             "We help you get the best deals while providing assistance for TSA Pre-check, Global Entry, Flight Bookings, Hotel Accommodations, Airbnb Bookings, Canada Visit Visa Applications and more",
-        image: "/assets/images/travel-and-accommodation.jpg",
+        image: "assets/images/travel-and-accommodation.jpg",
         link: "",
     },
     {
@@ -16,7 +16,7 @@ const slides = [
         title: "Education & Career",
         description:
             "We offer guidance and a dedicated support in CPT/OPT Application Process, University Transfers, STEM Extension and more",
-        image: "/assets/images/education-and-career.jpg",
+        image: "assets/images/education-and-career.jpg",
         link: "",
     },
     {
@@ -24,7 +24,7 @@ const slides = [
         title: "Financial Services",
         description:
             "We provide assistance in Traffic Ticket Transfers, Car Financing, Banking, Credit Score Management, Pay Traffic Violation and more",
-        image: "/assets/images/financial-services.jpg",
+        image: "assets/images/financial-services.jpg",
         link: "",
     },
     {
@@ -32,7 +32,7 @@ const slides = [
         title: "Property & Registration",
         description:
             "We provide assistance in Traffic Ticket Transfers, Car Financing, Banking, Credit Score Management, Pay Traffic Violation and more",
-        image: "/assets/images/property-registration.jpg",
+        image: "assets/images/property-registration.jpg",
         link: "",
     },
 ];
