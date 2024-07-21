@@ -9,6 +9,7 @@ const slides = [
         description:
             "We help you get the best deals while providing assistance for TSA Pre-check, Global Entry, Flight Bookings, Hotel Accommodations, Airbnb Bookings, Canada Visit Visa Applications and more",
         image: "assets/images/travel-and-accommodation.jpg",
+        imagesm: "assets/images/travel-and-accommodation-sm.jpg",
         link: "",
     },
     {
@@ -17,6 +18,7 @@ const slides = [
         description:
             "We offer guidance and a dedicated support in CPT/OPT Application Process, University Transfers, STEM Extension and more",
         image: "assets/images/education-and-career.jpg",
+        imagesm: "assets/images/education-and-career-sm.jpg",
         link: "",
     },
     {
@@ -25,6 +27,7 @@ const slides = [
         description:
             "We provide assistance in Traffic Ticket Transfers, Car Financing, Banking, Credit Score Management, Pay Traffic Violation and more",
         image: "assets/images/financial-services.jpg",
+        imagesm: "assets/images/financial-services-sm.jpg",
         link: "",
     },
     {
@@ -33,6 +36,7 @@ const slides = [
         description:
             "Your go-to for Rental Properties across Chicago and closer surburbs, LLC and Corporation registration, and Special & Custom License Plates",
         image: "assets/images/property-registration.jpg",
+        imagesm: "assets/images/property-registration-sm.jpg",
         link: "",
     },
     {
@@ -41,6 +45,7 @@ const slides = [
         description:
             "We design, maintain and develop experiences to make people's life simpler.",
         image: "assets/images/webdesigning-maintenance.jpg",
+        imagesm: "assets/images/webdesigning-maintenance-sm.jpg",
         link: "",
     },
 ];
@@ -53,7 +58,7 @@ const addSlide = (slideSelected) => {
                     <p>${slideSelected.description}</p>
                 </div>
                 <a class="slide" href=${slideSelected.link}>
-                    <img src=${slideSelected.image} alt=${slideSelected.title}/>
+                    <img srcset="${slideSelected.imagesm} 300w, ${slideSelected.image} 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" src=${slideSelected.image} alt=${slideSelected.title}/>
                 </a>`;
 
     slideContainer.insertAdjacentHTML("beforeend", html);
