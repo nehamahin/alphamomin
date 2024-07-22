@@ -1,0 +1,67 @@
+@media only screen and (max-width: 650px){
+    html{
+        font-size: 52%;
+    }
+    header{
+        padding: .5rem 1rem;
+        align-items: center;
+    }
+    .logo{
+        margin: 0 1.5rem;
+    }
+    .slider button{
+        width: 5rem;
+        padding: 1rem;
+    }
+    button#prev-slide{
+        z-index: 2;
+    }
+    .slider span#slide{
+        flex-direction: column;
+        position: relative;
+    }
+    .slide-content{
+        padding: 6rem;
+        position: absolute;
+        height: 100%;
+        background-color: var(--color-rgba-primary-dark);
+    }
+    .slide-content, .slide{
+        width: 100%;
+    }
+    .slide{
+        min-height: 30rem;
+    }
+    .nav, header .btn-link{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    .mobile-menu svg{
+        fill: var(--color-secondary);
+    }
+}
+/* @media only screen and (max-width: 900px) {
+    .container__left{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav .nav__menu{
+        justify-content: center;
+    }
+    .nav .nav__menu .nav__menu--item{
+        margin-right: 15px;
+    }
+    .nav .nav__menu .nav__menu--item a svg{
+        margin-right: 0;
+    }
+    .nav .nav__menu .nav__menu--item a span{
+        display: none;
+    }
+} */
+@media only screen and (max-width: 375px) {
+    
+}
