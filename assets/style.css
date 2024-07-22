@@ -2,7 +2,7 @@
     --color-primary: #000000;
     --color-secondary: #FFCB46;
     --color-rgba-primary: rgba(0, 0, 0, .3);
-    --color-rgba-primary-dark: rgba(0,0,0, .8);
+    --color-rgba-primary-dark: rgba(0,0,0, .9);
     --color-rgba-secondary: rgba(255, 203, 70, .2);
     --color-text: #FFFFFF;
     --color-text-light: #777777;
@@ -117,6 +117,48 @@ main{
 section{
     width: 100%;
     height: 100%;
+    margin-bottom: 3rem;
+}
+.services{
+    padding: 2rem 3.5rem;
+    width: calc(100% - 12rem);
+    margin: 1rem auto;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.service-card{
+    width: 35rem;
+    height: 30rem;
+    padding: 1rem;
+    background-color: var(--color-rgba-primary-dark);
+    border: 2px solid var(--color-rgba-secondary);
+}
+.service-card h3{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+    color: var(--color-secondary);
+}
+.service-card .service-text ul{
+    list-style: none;
+}
+.service-card .service-text ul li{
+    padding: .5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.service-title, .service-text p{
+    padding: .5rem 0;
+}
+.service-text p{
+    line-height: 1.7;
+    letter-spacing: .5px;
 }
 footer{
     width: 100%;
