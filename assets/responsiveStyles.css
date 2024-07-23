@@ -1,3 +1,35 @@
+@media only screen and (max-width: 64.25em){
+    html{
+        font-size: 56.25%;
+    }
+    .slider button{
+        width: 5rem;
+        padding: 1rem;
+    }
+    button#prev-slide{
+        z-index: 2;
+    }
+    .slider span#slide{
+        flex-direction: column;
+        position: relative;
+    }
+    .slide-content{
+        padding: 6rem;
+        position: absolute;
+        height: 100%;
+        background-color: var(--color-rgba-primary-dark);
+    }
+    .slide-content, .slide{
+        width: 100%;
+    }
+    .slide{
+        min-height: 100%;
+        height: 100%;
+    }
+    .cards{
+        justify-content: unset;
+    }
+}
 @media only screen and (max-width: 40.65em){
     html{
         font-size: 52%;

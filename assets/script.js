@@ -39,15 +39,6 @@ const slides = [
         imagesm: "assets/images/llc-corp-registration-sm.jpg",
         link: "",
     },
-    {
-        id: "4",
-        title: "Web Designing & Maintenance",
-        description:
-            "We design, maintain and develop experiences to make people's life simpler.",
-        image: "assets/images/webdesigning-maintenance.jpg",
-        imagesm: "assets/images/webdesigning-maintenance-sm.jpg",
-        link: "",
-    },
 ];
 
 let currentSlide = 0;
