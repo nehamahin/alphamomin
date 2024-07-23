@@ -1,4 +1,4 @@
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 40.65em){
     html{
         font-size: 52%;
     }
@@ -34,6 +34,9 @@
     }
     .nav, header .btn-link{
         display: none;
+    }
+    .service-card{
+        width: 80%;
     }
     .mobile-menu{
         display: block;
