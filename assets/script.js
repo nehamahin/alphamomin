@@ -8,8 +8,7 @@ const slides = [
         title: "Travel & Accommodation",
         description:
             "We help you get the best deals while providing assistance for TSA Pre-check, Global Entry, Flight Bookings, Hotel Accommodations, Airbnb Bookings, Canada Visit Visa Applications, Rental Properties across Chicago and closer surburbs and more",
-        image: "assets/images/travel-and-accommodation.jpg",
-        imagesm: "assets/images/travel-and-accommodation-sm.jpg",
+        image: "assets/images/travel-and-accommodation",
         link: "",
     },
     {
@@ -17,8 +16,7 @@ const slides = [
         title: "Academic Administration",
         description:
             "We offer guidance and a dedicated support in CPT/OPT Application Process, University Transfers, STEM Extension and more",
-        image: "assets/images/education-and-career.jpg",
-        imagesm: "assets/images/education-and-career-sm.jpg",
+        image: "assets/images/education-and-career",
         link: "",
     },
     {
@@ -26,8 +24,7 @@ const slides = [
         title: "Financial & Credit Management",
         description:
             "We provide assistance in Car Financing, Banking, Credit Score Assistance and more",
-        image: "assets/images/financial-services.jpg",
-        imagesm: "assets/images/financial-services-sm.jpg",
+        image: "assets/images/financial-services",
         link: "",
     },
     {
@@ -35,8 +32,7 @@ const slides = [
         title: "Legal & Administrative Registrations",
         description:
             "LLC/Corporation registration, Special/Custom License Plates, Pay Traffic Violation, Traffic Ticket Transfers etcetera",
-        image: "assets/images/llc-corp-registration.jpg",
-        imagesm: "assets/images/llc-corp-registration-sm.jpg",
+        image: "assets/images/llc-corp-registration",
         link: "",
     },
 ];
@@ -49,7 +45,7 @@ const addSlide = (slideSelected) => {
                     <p>${slideSelected.description}</p>
                 </div>
                 <a class="slide" href=${slideSelected.link}>
-                    <img srcset="${slideSelected.imagesm} 300w, ${slideSelected.image} 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" src=${slideSelected.image} alt=${slideSelected.title}/>
+                    <img srcset="${slideSelected.image}-sm.jpg 300w, ${slideSelected.image}-m.jpg 1000w, ${slideSelected.image}.jpg 1800w" sizes="(max-width: 40.6em) 100vw, (max-width: 64.25em) 100vw, 100vw" src=${slideSelected.image} alt=${slideSelected.title}/>
                 </a>`;
 
     slideContainer.insertAdjacentHTML("beforeend", html);
