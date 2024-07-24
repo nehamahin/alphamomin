@@ -192,7 +192,7 @@ footer{
     padding: 1rem 3.5rem;
 }
 .pageYTransition{
-    animation: pageYTransition 2s ease-in-out;
+    animation: pageYTransition 1s ease-in-out;
 }
 .pageXTransition{
     animation: pageXTransition 1s ease-in-out;

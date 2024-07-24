@@ -41,8 +41,8 @@ let currentSlide = 0;
 
 const addSlide = (slideSelected) => {
     let html = `<div class="slide-content">
-                    <h2>${slideSelected.title}</h2>
-                    <p>${slideSelected.description}</p>
+                    <h2 class="pageYTransition">${slideSelected.title}</h2>
+                    <p  class="pageYTransition">${slideSelected.description}</p>
                 </div>
                 <a class="slide" href=${slideSelected.link}>
                     <img srcset="${slideSelected.image}-sm.jpg 300w, ${slideSelected.image}-m.jpg 1000w, ${slideSelected.image}.jpg 1800w" sizes="(max-width: 40.6em) 100vw, (max-width: 64.25em) 100vw, 100vw" src=${slideSelected.image} alt=${slideSelected.title}/>
