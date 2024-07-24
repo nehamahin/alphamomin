@@ -7,7 +7,7 @@ const slides = [
         id: "0",
         title: "Travel & Accommodation",
         description:
-            "We help you get the best deals while providing assistance for TSA Pre-check, Global Entry, Flight Bookings, Hotel Accommodations, Airbnb Bookings, Canada Visit Visa Applications, Rental Properties across Chicago and closer surburbs and more",
+            "We help you get the best deals while providing assistance for TSA Pre-check, Global Entry, Flight Bookings, Hotel Accommodations, Airbnb Bookings, Canada Visit Visa Applications, Rental Properties across Chicago and closer suburbs and more",
         image: "assets/images/travel-and-accommodation",
         link: "",
     },
@@ -45,7 +45,9 @@ const addSlide = (slideSelected) => {
                     <p  class="pageYTransition">${slideSelected.description}</p>
                 </div>
                 <a class="slide" href=${slideSelected.link}>
-                    <img srcset="${slideSelected.image}-sm.jpg 300w, ${slideSelected.image}-m.jpg 1000w, ${slideSelected.image}.jpg 1800w" sizes="(max-width: 40.6em) 100vw, (max-width: 64.25em) 100vw, 100vw" src=${slideSelected.image} alt=${slideSelected.title}/>
+                <img srcset="${slideSelected.image}-sm.jpg 600w, ${slideSelected.image}-m.jpg 1000w"
+                    sizes="(max-width: 40.625em) 100vw, (min-width: 40.626em) 1000px"
+                    src="${slideSelected.image}-m.jpg" alt="${slideSelected.title}">
                 </a>`;
 
     slideContainer.insertAdjacentHTML("beforeend", html);
