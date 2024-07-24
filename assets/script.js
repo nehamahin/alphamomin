@@ -79,3 +79,18 @@ nextBtn.addEventListener("click", (e) => {
     }
     viewController(currentSlide);
 });
+
+window.onscroll = () => {
+    const section = document.getElementById("services");
+    let coords = section.getBoundingClientRect();
+    console.log(coords);
+    if (coords.height > 500) {
+        document
+            .querySelector(".services-head")
+            .classList.add("pageXTransition");
+        document.querySelector(".cards").classList.add("pageYTransition");
+    }
+
+    //500
+    //543
+};
