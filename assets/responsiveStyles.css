@@ -60,7 +60,10 @@
     .nav, header .btn-link{
         display: none;
     }
-    .service-head{
+    .services{
+        padding: 2rem;
+    }
+    .services-head{
         padding: 1rem;
     }
     .service-card{
