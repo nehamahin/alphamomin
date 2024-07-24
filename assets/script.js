@@ -81,16 +81,17 @@ nextBtn.addEventListener("click", (e) => {
 });
 
 window.onscroll = () => {
-    const section = document.getElementById("services");
-    let coords = section.getBoundingClientRect();
-    console.log(coords);
-    if (coords.height > 500) {
-        document
-            .querySelector(".services-head")
-            .classList.add("pageXTransition");
-        document.querySelector(".cards").classList.add("pageYTransition");
-    }
+    const services = document.getElementById("services");
+    const servicesHead = document.querySelector(".services-head");
+    const servicesCards = document.querySelector(".cards");
 
-    //500
-    //543
+    let coords = services.getBoundingClientRect();
+
+    if (coords.y <= 390 && coords.y > 288) {
+        servicesHead.classList.add("pageXTransition");
+        servicesCards.classList.add("pageYTransition");
+    } else if (coords > 390) {
+        servicesHead.classList.remove("pageXTransition");
+        servicesCards.classList.remove("pageYTransition");
+    }
 };

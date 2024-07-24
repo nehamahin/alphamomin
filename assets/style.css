@@ -109,6 +109,15 @@ header{
 .mobile-menu{
     display: none;
 }
+.greetings{
+    padding: 2rem 3.5rem;
+    background-color: var(--color-secondary);
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    text-align: center;
+}
 
 main{
     width: 100%;
