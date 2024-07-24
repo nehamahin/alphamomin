@@ -90,7 +90,7 @@ window.onscroll = () => {
     if (coords.y <= 390 && coords.y > 288) {
         servicesHead.classList.add("pageXTransition");
         servicesCards.classList.add("pageYTransition");
-    } else if (coords > 390) {
+    } else if (coords.y > 390) {
         servicesHead.classList.remove("pageXTransition");
         servicesCards.classList.remove("pageYTransition");
     }

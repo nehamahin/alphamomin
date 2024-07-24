@@ -195,7 +195,7 @@ footer{
     animation: pageYTransition 2s ease-in-out;
 }
 .pageXTransition{
-    animation: pageXTransition 2s ease-in-out;
+    animation: pageXTransition 1s ease-in-out;
 }
 @keyframes pageXTransition {
     0% {
