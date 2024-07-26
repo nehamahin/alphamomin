@@ -1,7 +1,7 @@
 .mobile-menu__svg, .mobile-nav__close--svg{
     width: 3rem;
     height: 3rem;
-    fill: var(--color-secondary);
+    fill: var(--color-primary);
 }
 .mobile-nav{
     display: none;
@@ -18,7 +18,7 @@
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
     transition: right 0.3s ease;

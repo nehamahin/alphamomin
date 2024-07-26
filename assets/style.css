@@ -1,11 +1,12 @@
 :root{
-    --color-primary: #000000;
-    --color-secondary: #FFCB46;
-    --color-rgba-primary: rgba(0, 0, 0, .3);
-    --color-rgba-primary-dark: rgba(0,0,0, .9);
-    --color-rgba-secondary: rgba(255, 203, 70, .3);
-    --color-text: #FFFFFF;
-    --color-text-light: #777777;
+    --color-primary: #B83338;
+    --color-secondary: #EAFDF8;
+    --color-tertiary: #000500;
+    --color-quaternary: #5C6672;
+    --color-quinary: #7D8CA8;
+    --color-rgba-primary: rgba(184, 51, 56, 0.659);
+    --color-rgba-tertiary-dark: rgba(0,5,0, .9);
+    --color-rgba-tertiary: rgba(0, 5, 0, .3);
 }
 *,
 *::before,
@@ -20,11 +21,11 @@ html{
 }
 body{
     font-size: 1.6rem;
-    color: var(--color-text);
+    color: var(--color-tertiary);
     /* background: linear-gradient(180deg, var(--color-rgba-primary-dark), var(--color-rgba-primary-dark) ), url(/assets/images/property-registration-m.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
-    background: var(--color-primary);
+    background: var(--color-secondary);
     max-width: 100vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -32,7 +33,7 @@ body{
     line-height: 1.7;
     letter-spacing: .2px;
 }
-h2, h3, h4, h5{
+h1, h2, h3, h4, h5{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
@@ -42,10 +43,20 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: .5rem 3.5rem;
+    background-color: var(--color-secondary);
+}
+.logo,
+.logo svg{
+    height: 6rem;
 }
 .logo svg{
     width: 12rem;
-    height: 6rem;
+}
+header .logo svg{
+    fill: var(--color-tertiary);
+}
+footer .logo svg{
+    fill: var(--color-secondary);
 }
 .nav{
     padding: 0 1rem;
@@ -58,12 +69,12 @@ header{
     list-style: none;
 }
 .btn-link{
-    color: var(--color-text);
+    color: var(--color-secondary);
     text-decoration: none;
     cursor: pointer;
     margin: 0 1rem;
     padding: 1rem 2rem;
-    background: var(--color-rgba-secondary);
+    background: var(--color-primary);
     border-radius: .5rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
@@ -86,10 +97,10 @@ header{
     display: block;
 }
 .nav .nav__menu .nav__menu--item a{
-    color: var(--color-text);
+    color: var(--color-primary);
 }
 .mobile-nav .mobile-nav__menu .mobile-nav__menu--item a{
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 .nav .nav__menu .nav__menu--item a,
 .mobile-nav .mobile-nav__menu .mobile-nav__menu--item a{
@@ -97,19 +108,20 @@ header{
     text-decoration: none;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
     letter-spacing: .5px;
 }
 .nav .nav__menu .nav__menu--item a svg,
 .mobile-nav .mobile-nav__menu .mobile-nav__menu--item a svg{
     width: 2rem;
     height: 2rem;
-    fill: var(--color-text);
+    fill: var(--color-tertiary);
     margin-right: 1.5rem;
     vertical-align: sub;
 }
 .nav .nav__menu .nav__menu--item:hover a,
 .mobile-nav .mobile-nav__menu .mobile-nav__menu--item:hover a{
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 .mobile-menu{
     display: none;
@@ -133,11 +145,11 @@ section{
     height: 100%;
 }
 .services, .about-us{
-    padding: 2rem 3.5rem;
-    width: calc(100% - 6rem);
-    margin: 1rem auto;
+    padding: 2rem 8rem;
+    margin: 0 auto;
 }
 .services{
+    background: var(--color-secondary);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -151,10 +163,13 @@ section{
     font-size: 3.5rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    color: var(--color-secondary);
+}
+.services-head h2{
+    color: var(--color-primary);
 }
 .services-head h3{
-    font-size: 3rem;
+    font-size: 2rem;
+    color: var(--color-quaternary);
 }
 .cards{
     display: flex;
@@ -165,10 +180,11 @@ section{
 .service-card{
     width: 30%;
     min-width: 30rem;
-    height: 36rem;
+    height: 100%;
+    min-height: 40rem;
     margin: 1rem;
     padding: 2rem;
-    background-color: var(--color-rgba-secondary);
+    background-color: var(--color-primary);
 }
 .service-card h3, .web-solutions h3{
     font-size: 2rem;
@@ -185,6 +201,7 @@ section{
     font-size: 1.6rem;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    color: var(--color-secondary);
 }
 .service-title, .service-text p{
     padding: .5rem 0;
@@ -196,10 +213,11 @@ section{
 .web-solutions{
     margin: 1rem;
     padding: 2rem;
-    background: var(--color-rgba-secondary);
+    background: var(--color-primary);
 }
 .web-solutions p{
     margin-bottom: 1rem;
+    color: var(--color-secondary);
 }
 .about-wrapper{
     padding: 2rem;
@@ -209,19 +227,32 @@ section{
 .about-wrapper h2{
     width: 40%;
     margin-bottom: 1.5rem;
-}
-.about-wrapper p{
-    /* font-size: 2rem;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    width: 60%;
-    align-self: flex-end; */
+    color: var(--color-primary);
 }
 footer{
     width: 100%;
-    color: var(--color-text-light);
-    padding: 1rem 3.5rem;
+    background-color: var(--color-tertiary);
+    color: var(--color-quaternary);
+    padding: 1rem 6rem;
 }
+.footer-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.footer_links{
+    list-style: none;
+    font-size: 1.4rem;
+}
+.footer_links--item, footer small, .footer-list h5{
+    padding: .2rem 2rem;
+}
+.footer_links--item a{
+    text-decoration: none;
+    color: var(--color-quaternary);
+}
+
 .pageYTransition{
     animation: pageYTransition 1s ease-in-out;
 }
