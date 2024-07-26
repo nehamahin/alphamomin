@@ -29,6 +29,9 @@
     .cards{
         justify-content: unset;
     }
+    .about-wrapper{
+        padding: 1rem;
+    }
     .about-wrapper h2{
         width: 100%;
     }
@@ -87,6 +90,9 @@
     }
     .mobile-menu svg{
         fill: var(--color-primary);
+    }
+    .about-wrapper{
+        padding: 1rem;
     }
     .about-wrapper h2{
         width: 100%;
