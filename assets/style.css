@@ -128,11 +128,11 @@ footer .logo svg{
 }
 .greetings{
     padding: 2rem 3.5rem;
-    background-color: var(--color-secondary);
+    background-color: var(--color-tertiary);
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     text-align: center;
 }
 
@@ -243,14 +243,17 @@ footer{
 }
 .footer_links{
     list-style: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
-.footer_links--item, footer small, .footer-list h5{
+.footer_links--item, footer small{
     padding: .2rem 2rem;
 }
 .footer_links--item a{
     text-decoration: none;
     color: var(--color-quaternary);
+}
+.footer_links--item a:hover{
+    color: var(--color-primary);
 }
 
 .pageYTransition{
