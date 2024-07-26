@@ -3,7 +3,7 @@
     --color-secondary: #FFCB46;
     --color-rgba-primary: rgba(0, 0, 0, .3);
     --color-rgba-primary-dark: rgba(0,0,0, .9);
-    --color-rgba-secondary: rgba(255, 203, 70, .2);
+    --color-rgba-secondary: rgba(255, 203, 70, .3);
     --color-text: #FFFFFF;
     --color-text-light: #777777;
 }
@@ -21,11 +21,16 @@ html{
 body{
     font-size: 1.6rem;
     color: var(--color-text);
+    /* background: linear-gradient(180deg, var(--color-rgba-primary-dark), var(--color-rgba-primary-dark) ), url(/assets/images/property-registration-m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
     background: var(--color-primary);
     max-width: 100vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     position: relative;
+    line-height: 1.7;
+    letter-spacing: .2px;
 }
 h2, h3, h4, h5{
     font-family: 'Poppins', sans-serif;
@@ -127,27 +132,29 @@ section{
     width: 100%;
     height: 100%;
 }
-.services{
+.services, .about-us{
     padding: 2rem 3.5rem;
     width: calc(100% - 6rem);
     margin: 1rem auto;
+}
+.services{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 .services-head{
-    padding: 2rem;
+    padding: 2rem 1rem;
     width: 30rem;
 }
-.services-head h2{ 
+.services-head h2, .about-wrapper h2{ 
     font-size: 3.5rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     color: var(--color-secondary);
 }
 .services-head h3{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .cards{
     display: flex;
@@ -158,12 +165,12 @@ section{
 .service-card{
     width: 30%;
     min-width: 30rem;
-    height: 33rem;
+    height: 36rem;
     margin: 1rem;
     padding: 2rem;
     background-color: var(--color-rgba-secondary);
 }
-.service-card h3{
+.service-card h3, .web-solutions h3{
     font-size: 2rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
@@ -175,7 +182,7 @@ section{
 }
 .service-card .service-text ul li{
     padding: .5rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
@@ -185,6 +192,30 @@ section{
 .service-text p{
     line-height: 1.7;
     letter-spacing: .5px;
+}
+.web-solutions{
+    margin: 1rem;
+    padding: 2rem;
+    background: var(--color-rgba-secondary);
+}
+.web-solutions p{
+    margin-bottom: 1rem;
+}
+.about-wrapper{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.about-wrapper h2{
+    width: 40%;
+    margin-bottom: 1.5rem;
+}
+.about-wrapper p{
+    /* font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    align-self: flex-end; */
 }
 footer{
     width: 100%;

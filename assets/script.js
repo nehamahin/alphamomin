@@ -23,7 +23,7 @@ const slides = [
         id: "2",
         title: "Financial & Credit Management",
         description:
-            "We provide assistance in Car Financing, Banking, Credit Score Assistance and more",
+            "Consult with us for tailored advice and assistance in managing your bank accounts, for expert car financing solutions, and for professional credit score assistance.",
         image: "assets/images/financial-services",
         link: "",
     },
@@ -31,8 +31,16 @@ const slides = [
         id: "3",
         title: "Legal & Administrative Registrations",
         description:
-            "LLC/Corporation registration, Special/Custom License Plates, Pay Traffic Violation, Traffic Ticket Transfers etcetera",
+            "Consult with us for comprehensive LLC/Corp registration services, for obtaining special/custom license plates, for streamlined traffic violation payment services, and for efficient traffic ticket transfer services.",
         image: "assets/images/llc-corp-registration",
+        link: "",
+    },
+    {
+        id: "4",
+        title: "Web Solutions",
+        description:
+            "Receive expert assistance in developing, maintaining, and optimizing your website to enhance your online presence and business operations. Ensure your website is functional, user-friendly, and optimized for performance to attract and retain customers. Consult with us for comprehensive website development and support services.",
+        image: "assets/images/webdesigning-maintenance",
         link: "",
     },
 ];
@@ -86,14 +94,17 @@ window.onscroll = () => {
     const services = document.getElementById("services");
     const servicesHead = document.querySelector(".services-head");
     const servicesCards = document.querySelector(".cards");
+    const webSolutions = document.querySelector(".web-solutions");
 
     let coords = services.getBoundingClientRect();
 
     if (coords.y <= 390 && coords.y > 288) {
         servicesHead.classList.add("pageXTransition");
         servicesCards.classList.add("pageYTransition");
+        webSolutions.classList.add("pageYTransition");
     } else if (coords.y > 390) {
         servicesHead.classList.remove("pageXTransition");
         servicesCards.classList.remove("pageYTransition");
+        webSolutions.classList.remove("pageYTransition");
     }
 };

@@ -69,4 +69,5 @@
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.7;
+    color: var(--color-text);
 }
