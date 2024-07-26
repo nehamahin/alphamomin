@@ -110,6 +110,7 @@ footer .logo svg{
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     letter-spacing: .5px;
+    transition: color 0.3s ease;
 }
 .nav .nav__menu .nav__menu--item a svg,
 .mobile-nav .mobile-nav__menu .mobile-nav__menu--item a svg{
@@ -262,10 +263,23 @@ footer{
 .pageXTransition{
     animation: pageXTransition 1s ease-in-out;
 }
+.fromOriginXTransition{
+    animation: fromOriginXTransition .5s ease-in-out;
+}
 @keyframes pageXTransition {
     0% {
         opacity: 0;
         transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fromOriginXTransition {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
     }
     100%{
         opacity: 1;
