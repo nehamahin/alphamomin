@@ -66,6 +66,7 @@
     }
     .slide-content, .slide{
         width: 100%;
+        height: 50rem;
     }
     .nav, header .btn-link{
         display: none;
