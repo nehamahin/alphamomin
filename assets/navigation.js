@@ -13,11 +13,13 @@ if (menuNavBtn || closeNav) {
 }
 
 allMobileNavItems.forEach((navlink) => {
-    navlink.addEventListener("click", () => toggleMobileNav());
+    navlink.addEventListener("click", () =>
+        mobileNav.classList.remove("active")
+    );
 });
 
 document.addEventListener("click", (e) => {
     if (!mobileNav.contains(e.target) && !menuNavBtn.contains(e.target)) {
-        toggleMobileNav();
+        mobileNav.classList.remove("active");
     }
 });
