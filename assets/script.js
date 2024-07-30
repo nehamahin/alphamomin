@@ -102,9 +102,5 @@ window.onscroll = () => {
         servicesHead.classList.add("pageXTransition");
         servicesCards.classList.add("pageYTransition");
         webSolutions.classList.add("pageYTransition");
-    } else if (coords.y > 390) {
-        servicesHead.classList.remove("pageXTransition");
-        servicesCards.classList.remove("pageYTransition");
-        webSolutions.classList.remove("pageYTransition");
     }
 };
