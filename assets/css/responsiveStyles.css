@@ -122,6 +122,7 @@
         order: 3;
         max-width: 100%;
     }
+    .form-group-dropdown,
     .contact-us-wrapper .form-group input,
     .contact-us-wrapper .form-group textarea,
     .contact-us-wrapper form button{
