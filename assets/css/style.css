@@ -301,7 +301,7 @@ section{
 footer{
     width: 100%;
     background-color: var(--color-tertiary);
-    color: var(--color-quaternary);
+    color: var(--color-quinary);
     padding: 1rem 6rem;
 }
 .footer-menu{
@@ -319,7 +319,7 @@ footer{
 }
 .footer_links--item a{
     text-decoration: none;
-    color: var(--color-quaternary);
+    color: var(--color-quinary);
 }
 .footer_links--item a:hover{
     color: var(--color-primary);
